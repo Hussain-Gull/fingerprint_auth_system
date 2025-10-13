@@ -1,7 +1,18 @@
-FROM node:22-alpine
+FROM node:20-alpine
+
 WORKDIR /usr/src/app
+
+# Copy package files first to leverage cache
 COPY package.json yarn.lock* ./
-RUN yarn install --frozen-lockfile
+
+# Install dependencies
+RUN yarn install --network-timeout 600000
+
+# Copy source files
 COPY . .
-EXPOSE 3000
-CMD ["yarn", "start"]
+
+# Expose Vite dev server port
+EXPOSE 5173
+
+# Start Vite dev server
+CMD ["yarn", "dev"]

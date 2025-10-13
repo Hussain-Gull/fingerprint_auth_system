@@ -24,6 +24,7 @@ export default function Enrollment() {
     }
   }
 
+
   return (
     <div>
       {step === 1 && <StudentForm onSubmit={submitMetadata} />}
