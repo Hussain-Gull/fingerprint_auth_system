@@ -1,28 +1,32 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import AdminDashboard from "./pages/AdminDashboard";
-import Enrollment from "./pages/Enrollment";
+import { useState } from 'react'
 
-const App: React.FC = () => {
-    return (
-        <Router>
-            <nav className="navbar">
-                <h1>Fingerprint Enrollment System</h1>
-                <ul>
-                    <li><Link to="/enroll">Enroll Student</Link></li>
-                    <li><Link to="/admin">Admin Dashboard</Link></li>
-                </ul>
-            </nav>
+function App() {
+  const [count, setCount] = useState(0)
 
-            <main>
-                <Routes>
-                    <Route path="/" element={<Enrollment />} />
-                    <Route path="/enroll" element={<Enrollment />} />
-                    <Route path="/admin" element={<AdminDashboard />} />
-                </Routes>
-            </main>
-        </Router>
-    );
-};
+  return (
+    <>
+      <div>
+        <a href="https://vite.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.tsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
+    </>
+  )
+}
 
-export default App;
+export default App

@@ -57,9 +57,8 @@ services:
       WATCHPACK_POLLING: "true"
       NODE_ENV: development
     volumes:
-      - ./frontend:/usr/src/app
-      - frontend_node_modules:/usr/src/app/node_modules
-      - yarn_cache:/usr/local/share/.cache/yarn
+      - ./frontend:/usr/src/app          # mount entire project once
+      - /usr/src/app/node_modules        # keep container’s node_modules intact
     depends_on:
       - backend
     command: ["yarn", "dev", "--host", "0.0.0.0", "--port", "5173"]

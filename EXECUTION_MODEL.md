@@ -68,7 +68,7 @@ git clone <repository-url>
 cd auth-biometric
 
 # Verify you're in the correct directory
-ls -la
+ls -la  
 # You should see: backend/, frontend/, usb_service/, docker-compose.yml, etc.
 ```
 
