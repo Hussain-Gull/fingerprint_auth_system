@@ -15,7 +15,7 @@ import logging
 from typing import Optional, Tuple
 
 log = logging.getLogger("secugen_binding")
-SDK_PATH = os.getenv("SECUGEN_SDK_PATH")  # e.g. E:\FDx SDK Pro for Windows v4.3.1_J1.12
+SDK_PATH = os.getenv("SECUGEN_SDK_PATH")  # e.g. C:\secugen_sdk\bin\x64
 
 class SecuGenStub:
     def __init__(self):

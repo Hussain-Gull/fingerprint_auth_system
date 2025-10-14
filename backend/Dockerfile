@@ -1,37 +1,31 @@
-# === BUILD STAGE ===
-FROM python:3.11-slim AS builder
+# ---------- Stage: Backend (FastAPI + Python 3.11) ----------
+FROM python:3.11-slim
+
+# Set working directory
 WORKDIR /app
 
-# Install build dependencies for psycopg2 and other compiled packages
+# Disable Python cache and buffering
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+
+# Install essential build dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    gcc \
-    libpq-dev \
-    build-essential \
+    gcc libpq-dev build-essential \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements and build wheels
-COPY requirements.txt .
-RUN pip install --upgrade pip setuptools wheel && \
-    pip wheel --wheel-dir=/wheels -r requirements.txt
-
-# === FINAL STAGE ===
-FROM python:3.11-slim
-WORKDIR /app
-
-# Install runtime dependencies only
-RUN apt-get update && apt-get install -y --no-install-recommends libpq-dev && \
-    rm -rf /var/lib/apt/lists/*
-
-# Copy pre-built wheels
-COPY --from=builder /wheels /wheels
+# Copy dependency file first for cache efficiency
 COPY requirements.txt .
 
-# Install all dependencies from wheels (faster and reproducible)
-RUN pip install --no-cache-dir --find-links=/wheels -r requirements.txt
+# Install dependencies using BuildKit caching
+RUN --mount=type=cache,target=/root/.cache/pip \
+    pip install --upgrade pip setuptools wheel && \
+    pip install -r requirements.txt
 
-# Copy application source code
-COPY . /app
+# Copy the entire backend source code
+COPY . .
 
-# Expose port and start server
+# Expose FastAPI port
 EXPOSE 8000
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+
+# Default run command
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]

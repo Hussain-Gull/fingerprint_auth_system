@@ -25,8 +25,3 @@ class StudentDB(BaseModel):
     class Config:
         orm_mode = True
 
-class AuthResult(BaseModel):
-    success: bool
-    student: Optional[StudentDB]
-    reason: Optional[str]
-    token: Optional[str]
