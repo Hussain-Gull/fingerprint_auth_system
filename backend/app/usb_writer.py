@@ -26,11 +26,9 @@ import hashlib
 import logging
 from datetime import datetime
 from typing import List
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
 from .config import settings
-from .database import SessionLocal
-from .models import Student
+from backend.app.db.database import SessionLocal
+from backend.app.models.models import Student
 
 log = logging.getLogger("usb_writer")
 logging.basicConfig(level=logging.INFO)

@@ -8,8 +8,8 @@ import json
 import logging
 from typing import Dict, Set
 from fastapi import WebSocket, WebSocketDisconnect
-from .fingerprint_service import capture_fingerprint_with_retry
-from .secugen_binding import SecuGen
+from backend.app.fingerprint_service import capture_fingerprint_with_retry
+from backend.app.secugen_binding import SecuGen
 
 log = logging.getLogger("websocket_manager")
 

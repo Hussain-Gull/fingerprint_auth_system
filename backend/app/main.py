@@ -1,15 +1,12 @@
 import logging
 from fastapi import FastAPI
-from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
-from .database import engine
+from backend.app.db.database import engine
 from . import models
 from .routes import enrollment, admin, status, websocket, usb
 from .secugen_binding import SecuGen
 from .config import settings
 from .usb_service_client import usb_client
-from .utils.response import APIResponse
-
 
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger("backend")

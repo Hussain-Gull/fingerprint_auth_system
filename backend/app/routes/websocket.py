@@ -3,7 +3,7 @@ WebSocket Routes for Real-time Communication
 """
 
 from fastapi import APIRouter, WebSocket
-from ..websocket_manager import (
+from backend.app.websocket.websocket_manager import (
     handle_enrollment_websocket,
     handle_admin_websocket
 )

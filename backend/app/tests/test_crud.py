@@ -1,7 +1,6 @@
-import pytest
-from ..crud import create_student, get_student_by_cnic
-from ..database import SessionLocal
-from ..schemas import StudentCreate
+from ..crud import create_student
+from backend.app.db.database import SessionLocal
+from backend.app.schemas.schemas import StudentCreate
 
 def test_create_student(tmp_path, monkeypatch):
     db = SessionLocal()

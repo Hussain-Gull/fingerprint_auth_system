@@ -1,6 +1,6 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
-from ..database import SessionLocal
+from backend.app.db.database import SessionLocal
 from .. import schemas, crud
 from ..fingerprint_service import capture_fingerprint_with_retry
 from ..utils.response import APIResponse, APIError
