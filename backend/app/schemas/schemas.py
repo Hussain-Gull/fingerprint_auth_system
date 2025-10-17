@@ -1,27 +1,17 @@
-from pydantic import BaseModel, Field
-from uuid import UUID
+from pydantic import BaseModel, Field, constr
 from typing import Optional
-from datetime import date, datetime
 
-class StudentCreate(BaseModel):
-    name: str
-    age: Optional[int]
-    father_name: Optional[str]
-    gender: Optional[str]
-    country: Optional[str]
-    cnic_number: str
-    date_of_birth: Optional[date]
-    date_of_issue: Optional[date]
-    date_of_expiry: Optional[date]
-    address: Optional[str]
-    # fingerprint_template will be populated server-side after capture
+class ApplicationCreate(BaseModel):
+    fullName: constr(min_length=1, max_length=15)
+    fatherName: constr(min_length=1, max_length=15)
+    dateOfBirth: str
+    gender: constr(min_length=1, max_length=10)
+    country: constr(min_length=1, max_length=10)
+    identityNumber: constr(min_length=13, max_length=13)
+    address: constr(min_length=1, max_length=100)
+    subject: str
+    # files will be sent as multipart separately
 
-class StudentDB(BaseModel):
-    id: UUID
-    name: str
-    cnic_number: str
-    created_at: datetime
-
-    class Config:
-        orm_mode = True
-
+class ApplicationResponse(BaseModel):
+    identityNumber: str
+    fullName: str

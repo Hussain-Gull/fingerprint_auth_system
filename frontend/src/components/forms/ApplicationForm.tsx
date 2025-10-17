@@ -5,6 +5,7 @@ import FileUpload from "./FileUpload";
 import SubjectSelect from "./SubjectSelect";
 import {applicationSchema, type ApplicationData} from "@/lib/validation.ts";
 import {useNavigate} from "react-router-dom";
+import axiosClient from "@/utils/axiosClient.ts";
 
 const subjects = ["Mathematics", "Physics", "Chemistry", "English", "History"];
 
@@ -19,15 +20,77 @@ export default function ApplicationForm() {
     });
     const navigate = useNavigate();
 
-    const onSubmit = (data: ApplicationData) => {
-        // save student data to session storage
-        sessionStorage.setItem("studentDetails", JSON.stringify(data));
-        if (sessionStorage.getItem("studentDetails") === null) {
-            alert("Error saving student details");
-            return;
-        }else{
+    const onSubmit = async (data: ApplicationData) => {
+        try {
+            // Sanitize file data - ensure empty objects become null
+            const sanitizedData = {
+                ...data,
+                cnicFront: data.cnicFront && Object.keys(data.cnicFront).length > 0 ? data.cnicFront : null,
+                cnicBack: data.cnicBack && Object.keys(data.cnicBack).length > 0 ? data.cnicBack : null,
+                studentImage: data.studentImage && Object.keys(data.studentImage).length > 0 ? data.studentImage : null,
+            };
+            
+            console.log("Sanitized form data before saving:", sanitizedData);
+            
+            // Create FormData for multipart upload
+            const formData = new FormData();
+            
+            // Add form fields (backend expects camelCase)
+            formData.append('fullName', data.fullName);
+            formData.append('fatherName', data.fatherName);
+            formData.append('dateOfBirth', data.dateOfBirth);
+            formData.append('gender', data.gender);
+            formData.append('country', data.country);
+            formData.append('identityNumber', data.identityNumber);
+            formData.append('address', data.address);
+            formData.append('subject', data.subject);
+            
+            // Add files if they exist
+            if (sanitizedData.cnicFront) {
+                formData.append('cnicFront', sanitizedData.cnicFront);
+            }
+            if (sanitizedData.cnicBack) {
+                formData.append('cnicBack', sanitizedData.cnicBack);
+            }
+            if (sanitizedData.studentImage) {
+                formData.append('studentImage', sanitizedData.studentImage);
+            }
+            
+            // Submit to backend
+            const response = await axiosClient.post('/applications', formData, {
+                headers: {
+                    'Content-Type': 'multipart/form-data',
+                },
+            });
+            
+            console.log('Application submitted successfully:', response.data);
+            
+            // Save student data to session storage for fingerprint page
+            sessionStorage.setItem("studentDetails", JSON.stringify(sanitizedData));
+            
             // Redirect to fingerprint page
-            navigate("/fingerprint-authentication")
+            navigate("/fingerprint-authentication");
+            
+        } catch (error: any) {
+            console.error('Error submitting application:', error);
+            
+            let errorMessage = "Failed to submit application";
+            
+            if (error.response?.data?.detail) {
+                // Handle FastAPI validation errors
+                if (Array.isArray(error.response.data.detail)) {
+                    const validationErrors = error.response.data.detail.map((err: any) => 
+                        `${err.loc.join('.')}: ${err.msg}`
+                    ).join(', ');
+                    errorMessage = `Validation errors: ${validationErrors}`;
+                } else {
+                    errorMessage = error.response.data.detail;
+                }
+            } else if (error.message) {
+                errorMessage = error.message;
+            }
+            
+            alert(`Error submitting application: ${errorMessage}`);
         }
     };
 

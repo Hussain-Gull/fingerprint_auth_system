@@ -1,0 +1,23 @@
+[2025-10-17 14:16:59] ========================================
+[2025-10-17 14:16:59] SecuGen SDK Installation Diagnostic
+[2025-10-17 14:16:59] ========================================
+[2025-10-17 14:16:59] SDK Base Directory: C:\secugen_sdk
+[2025-10-17 14:16:59] 
+[2025-10-17 14:16:59] Checking 64-bit binaries...
+[2025-10-17 14:16:59] FOUND: Main FPM Library - C:\secugen_sdk\bin\x64\sgfplib.dll - Size: 1014272 bytes
+[2025-10-17 14:16:59] FOUND: Algorithm Module (CRITICAL) - C:\secugen_sdk\bin\x64\sgfpamx.dll - Size: 190464 bytes
+[2025-10-17 14:16:59] FOUND: WSQ Module - C:\secugen_sdk\bin\x64\sgwsqlib.dll - Size: 76288 bytes
+[2025-10-17 14:16:59] 
+[2025-10-17 14:16:59] Checking header files...
+[2025-10-17 14:16:59] FOUND: SDK Header File - C:\secugen_sdk\Inc\sgfplib.h - Size: 26518 bytes
+[2025-10-17 14:16:59] 
+[2025-10-17 14:16:59] Checking library files...
+[2025-10-17 14:16:59] FOUND: Import Library 64-bit - C:\secugen_sdk\Lib\x64\sgfplib.lib - Size: 18606 bytes
+[2025-10-17 14:16:59] 
+[2025-10-17 14:16:59] Checking sample files...
+[2025-10-17 14:16:59] FOUND: Sample Code Directory - C:\secugen_sdk\Samples
+[2025-10-17 14:16:59] 
+[2025-10-17 14:16:59] ========================================
+[2025-10-17 14:16:59] RESULT: SDK installation appears COMPLETE
+[2025-10-17 14:16:59] ACTION: Fingerprint capture script should work
+[2025-10-17 14:16:59] ========================================

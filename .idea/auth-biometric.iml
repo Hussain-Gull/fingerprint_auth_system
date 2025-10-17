@@ -3,8 +3,13 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/.venv1" />
     </content>
-    <orderEntry type="jdk" jdkName="Remote Python 3.11.14 Docker Compose (backend)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.13 (auth-biometric)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="PackageRequirementsSettings">
+    <option name="removeUnused" value="true" />
   </component>
 </module>
