@@ -2,7 +2,8 @@ from urllib.parse import urlparse
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.routes import applications, ws_routes
-from backend.app.db.db import database, engine, metadata
+from app.api.v1 import auth
+from app.db.db import database, engine, metadata
 from app.utils.logger import logger
 from app.core.config import settings
 
@@ -44,6 +45,7 @@ def get_database_info():
         }
 
 # include routers
+app.include_router(auth.router, prefix="/api")
 app.include_router(applications.router, prefix="/api")
 app.include_router(ws_routes.router)
 

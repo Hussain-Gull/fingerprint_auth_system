@@ -2912,3 +2912,130 @@ TypeError: Passing coroutines is forbidden, use tasks explicitly.
 2025-10-17 17:02:59.866 | INFO     | app.routes.ws_routes:ws_scan:107 - Encrypted fingerprint saved for %s
 2025-10-17 17:02:59.868 | INFO     | app.routes.ws_routes:ws_scan:126 - WebSocket closed normally for %s
 2025-10-17 17:05:13.314 | INFO     | main:shutdown:92 - Database disconnected
+2025-10-17 20:28:09.044 | INFO     | main:startup:74 - Successfully connected to database!
+2025-10-17 20:28:09.045 | INFO     | main:startup:75 - Database Details:
+2025-10-17 20:28:09.046 | INFO     | main:startup:76 -   - Type: postgresql
+2025-10-17 20:28:09.046 | INFO     | main:startup:77 -   - Name: fingerprint_db
+2025-10-17 20:28:09.048 | INFO     | main:startup:78 -   - Host: localhost
+2025-10-17 20:28:09.049 | INFO     | main:startup:79 -   - Port: 5432
+2025-10-17 20:28:09.050 | INFO     | main:startup:80 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-17 20:28:09.051 | INFO     | main:startup:82 - Server starting at 0.0.0.0:8000
+2025-10-17 20:28:19.484 | INFO     | main:shutdown:91 - Database disconnected
+2025-10-17 20:29:44.997 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-17 20:29:44.997 | INFO     | main:startup:77 - Database Details:
+2025-10-17 20:29:44.998 | INFO     | main:startup:78 -   - Type: postgresql
+2025-10-17 20:29:44.998 | INFO     | main:startup:79 -   - Name: fingerprint_db
+2025-10-17 20:29:44.999 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-17 20:29:44.999 | INFO     | main:startup:81 -   - Port: 5432
+2025-10-17 20:29:44.999 | INFO     | main:startup:82 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-17 20:29:45.000 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-17 20:29:52.512 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-17 20:29:52.513 | INFO     | main:startup:77 - Database Details:
+2025-10-17 20:29:52.514 | INFO     | main:startup:78 -   - Type: postgresql
+2025-10-17 20:29:52.514 | INFO     | main:startup:79 -   - Name: fingerprint_db
+2025-10-17 20:29:52.515 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-17 20:29:52.516 | INFO     | main:startup:81 -   - Port: 5432
+2025-10-17 20:29:52.516 | INFO     | main:startup:82 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-17 20:29:52.516 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-17 20:30:01.018 | INFO     | main:shutdown:93 - Database disconnected
+2025-10-17 20:30:04.452 | INFO     | main:shutdown:93 - Database disconnected
+2025-10-17 20:30:08.159 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-17 20:30:08.160 | INFO     | main:startup:77 - Database Details:
+2025-10-17 20:30:08.160 | INFO     | main:startup:78 -   - Type: postgresql
+2025-10-17 20:30:08.161 | INFO     | main:startup:79 -   - Name: fingerprint_db
+2025-10-17 20:30:08.161 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-17 20:30:08.161 | INFO     | main:startup:81 -   - Port: 5432
+2025-10-17 20:30:08.162 | INFO     | main:startup:82 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-17 20:30:08.162 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-17 20:30:08.179 | INFO     | main:shutdown:93 - Database disconnected
+2025-10-17 20:30:11.684 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-17 20:30:11.684 | INFO     | main:startup:77 - Database Details:
+2025-10-17 20:30:11.685 | INFO     | main:startup:78 -   - Type: postgresql
+2025-10-17 20:30:11.685 | INFO     | main:startup:79 -   - Name: fingerprint_db
+2025-10-17 20:30:11.686 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-17 20:30:11.686 | INFO     | main:startup:81 -   - Port: 5432
+2025-10-17 20:30:11.687 | INFO     | main:startup:82 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-17 20:30:11.687 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-17 20:30:12.464 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-17 20:30:12.465 | INFO     | main:startup:77 - Database Details:
+2025-10-17 20:30:12.465 | INFO     | main:startup:78 -   - Type: postgresql
+2025-10-17 20:30:12.466 | INFO     | main:startup:79 -   - Name: fingerprint_db
+2025-10-17 20:30:12.466 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-17 20:30:12.467 | INFO     | main:startup:81 -   - Port: 5432
+2025-10-17 20:30:12.467 | INFO     | main:startup:82 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-17 20:30:12.467 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-17 20:30:14.445 | INFO     | main:shutdown:93 - Database disconnected
+2025-10-17 20:31:17.296 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-17 20:31:17.296 | INFO     | main:startup:77 - Database Details:
+2025-10-17 20:31:17.297 | INFO     | main:startup:78 -   - Type: postgresql
+2025-10-17 20:31:17.297 | INFO     | main:startup:79 -   - Name: fingerprint_db
+2025-10-17 20:31:17.297 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-17 20:31:17.297 | INFO     | main:startup:81 -   - Port: 5432
+2025-10-17 20:31:17.298 | INFO     | main:startup:82 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-17 20:31:17.298 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-17 20:39:06.924 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-17 20:39:06.925 | INFO     | main:startup:77 - Database Details:
+2025-10-17 20:39:06.925 | INFO     | main:startup:78 -   - Type: postgresql
+2025-10-17 20:39:06.926 | INFO     | main:startup:79 -   - Name: fingerprint_db
+2025-10-17 20:39:06.927 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-17 20:39:06.927 | INFO     | main:startup:81 -   - Port: 5432
+2025-10-17 20:39:06.927 | INFO     | main:startup:82 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-17 20:39:06.928 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-17 20:39:06.958 | INFO     | app.routes.applications:create_application:61 - Application stored id=%s identity=%s
+2025-10-17 20:39:06.962 | INFO     | app.routes.applications:create_application:61 - Application stored id=%s identity=%s
+2025-10-17 20:39:06.966 | WARNING  | app.routes.applications:create_application:66 - Duplicate CNIC attempt: %s
+2025-10-17 20:39:06.967 | WARNING  | app.routes.applications:create_application:66 - Duplicate CNIC attempt: %s
+2025-10-17 20:39:06.968 | WARNING  | app.routes.applications:create_application:66 - Duplicate CNIC attempt: %s
+2025-10-17 20:39:06.968 | WARNING  | app.routes.applications:create_application:66 - Duplicate CNIC attempt: %s
+2025-10-17 20:39:06.969 | WARNING  | app.routes.applications:create_application:66 - Duplicate CNIC attempt: %s
+2025-10-17 20:39:42.977 | INFO     | main:shutdown:93 - Database disconnected
+2025-10-17 20:39:46.866 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-17 20:39:46.868 | INFO     | main:startup:77 - Database Details:
+2025-10-17 20:39:46.869 | INFO     | main:startup:78 -   - Type: postgresql
+2025-10-17 20:39:46.871 | INFO     | main:startup:79 -   - Name: fingerprint_db
+2025-10-17 20:39:46.872 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-17 20:39:46.873 | INFO     | main:startup:81 -   - Port: 5432
+2025-10-17 20:39:46.873 | INFO     | main:startup:82 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-17 20:39:46.874 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-17 20:39:46.920 | INFO     | main:shutdown:93 - Database disconnected
+2025-10-17 20:39:51.105 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-17 20:39:51.106 | INFO     | main:startup:77 - Database Details:
+2025-10-17 20:39:51.108 | INFO     | main:startup:78 -   - Type: postgresql
+2025-10-17 20:39:51.111 | INFO     | main:startup:79 -   - Name: fingerprint_db
+2025-10-17 20:39:51.112 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-17 20:39:51.113 | INFO     | main:startup:81 -   - Port: 5432
+2025-10-17 20:39:51.113 | INFO     | main:startup:82 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-17 20:39:51.116 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-17 20:40:43.198 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-17 20:40:43.199 | INFO     | main:startup:77 - Database Details:
+2025-10-17 20:40:43.199 | INFO     | main:startup:78 -   - Type: postgresql
+2025-10-17 20:40:43.200 | INFO     | main:startup:79 -   - Name: fingerprint_db
+2025-10-17 20:40:43.200 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-17 20:40:43.201 | INFO     | main:startup:81 -   - Port: 5432
+2025-10-17 20:40:43.201 | INFO     | main:startup:82 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-17 20:40:43.202 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-17 20:40:49.515 | WARNING  | app.routes.applications:create_application:66 - Duplicate CNIC attempt: %s
+2025-10-17 20:40:57.941 | INFO     | app.routes.applications:create_application:61 - Application stored id=%s identity=%s
+2025-10-17 20:41:01.506 | INFO     | app.routes.ws_routes:ws_scan:27 - WebSocket connected for identity %s
+2025-10-17 20:41:01.511 | INFO     | app.services.fingerprint_session:run_scan:51 - Initializing SecuGen device for session %s
+2025-10-17 20:41:01.512 | INFO     | app.services.secu_gen:_ensure_sdk_loaded:84 - Loading SecuGen SDK DLLs...
+2025-10-17 20:41:01.517 | INFO     | app.services.secu_gen:_ensure_sdk_loaded:108 - SecuGen SDK loaded successfully
+2025-10-17 20:41:01.519 | INFO     | app.services.secu_gen:create:161 - SGFPM object created
+2025-10-17 20:41:12.537 | INFO     | app.services.secu_gen:init:176 - SGFPM initialized
+2025-10-17 20:41:23.525 | INFO     | app.services.secu_gen:open:188 - Device opened successfully
+2025-10-17 20:41:23.525 | INFO     | app.services.secu_gen:_load_device_info:252 - Device info: %dx%d pixels, DPI=%d, SN=%s
+2025-10-17 20:41:23.527 | INFO     | app.services.fingerprint_session:run_scan:61 - Device connected for session %s
+2025-10-17 20:41:23.581 | INFO     | app.services.secu_gen:set_template_format:305 - Template format set. Max template size: %d bytes
+2025-10-17 20:41:23.582 | INFO     | app.services.fingerprint_session:run_scan:72 - Device image size: %dx%d
+2025-10-17 20:41:24.787 | INFO     | app.services.fingerprint_session:_capture_image_with_retry:195 - Capture attempt %d/%d
+2025-10-17 20:41:34.384 | INFO     | app.services.secu_gen:capture_image_ex:373 - Image captured successfully (%d bytes)
+2025-10-17 20:41:34.385 | INFO     | app.services.fingerprint_session:_capture_image_with_retry:213 - Image captured successfully on attempt %d
+2025-10-17 20:41:34.390 | INFO     | app.services.fingerprint_session:_verify_image_quality:272 - Image quality score: %d/100
+2025-10-17 20:41:34.391 | WARNING  | app.services.fingerprint_session:run_scan:95 - Image quality too low: %d
+2025-10-17 20:41:34.481 | INFO     | app.services.secu_gen:create_template:484 - Template created successfully (%d bytes)
+2025-10-17 20:41:34.482 | INFO     | app.services.fingerprint_session:run_scan:125 - Fingerprint template created successfully. Template size: %d bytes
+2025-10-17 20:41:34.492 | INFO     | app.services.secu_gen:close:202 - Device closed
+2025-10-17 20:41:34.494 | INFO     | app.services.secu_gen:terminate:217 - SGFPM terminated
+2025-10-17 20:41:34.495 | INFO     | app.services.fingerprint_session:_cleanup_device:323 - Device cleanup completed
+2025-10-17 20:41:34.526 | INFO     | app.routes.ws_routes:ws_scan:107 - Encrypted fingerprint saved for %s
+2025-10-17 20:41:34.528 | INFO     | app.routes.ws_routes:ws_scan:126 - WebSocket closed normally for %s

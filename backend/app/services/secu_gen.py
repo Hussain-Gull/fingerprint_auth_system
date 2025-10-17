@@ -326,11 +326,11 @@ class SecuGenDevice:
             interval: Interval between blinks in seconds
         """
         logger.debug("Blinking LED %d times...", times)
-            for _ in range(times):
-                self.set_led(True)
-                time.sleep(interval)
-                self.set_led(False)
-                time.sleep(interval)
+        for _ in range(times):
+            self.set_led(True)
+            time.sleep(interval)
+            self.set_led(False)
+            time.sleep(interval)
 
     # ============================================================
     # Image Capture (Step 1 of fingerprint capture)

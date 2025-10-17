@@ -2,7 +2,7 @@ import json
 import asyncio
 from fastapi import APIRouter, WebSocket, WebSocketDisconnect
 from app.services.fingerprint_session import ScanSession
-from app.db import database
+from app.db.db import database
 from app.models import models
 from app.services.crypto import encrypt_bytes
 from app.utils.logger import logger

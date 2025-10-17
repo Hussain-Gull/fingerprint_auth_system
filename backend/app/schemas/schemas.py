@@ -1,6 +1,14 @@
 from pydantic import BaseModel, Field, constr
 from typing import Optional
 
+class AdminLogin(BaseModel):
+    username: str
+    password: str
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str = "bearer"
+
 class ApplicationCreate(BaseModel):
     fullName: constr(min_length=1, max_length=15)
     fatherName: constr(min_length=1, max_length=15)

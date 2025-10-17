@@ -2,8 +2,8 @@ import uuid
 from datetime import datetime, timedelta
 from fastapi import APIRouter, UploadFile, File, Depends, HTTPException, Form
 from pydantic import constr
-from app.schemas import ApplicationCreate, ApplicationResponse
-from app.db import database
+from app.schemas.schemas import ApplicationCreate, ApplicationResponse
+from app.db.db import database
 from app.models import models
 from app.utils.logger import logger
 from app.core.config import settings

@@ -1,6 +1,9 @@
 from sqlalchemy import Table, Column, Integer, String, Text, DateTime, Boolean, LargeBinary
+from sqlalchemy.orm import declarative_base
 from sqlalchemy.sql import func
-from app.db import metadata
+from app.db.db import metadata
+
+Base = declarative_base()
 
 applications = Table(
     "applications",
@@ -32,3 +35,10 @@ sessions = Table(
     Column("active", Boolean, default=True),
     Column("created_at", DateTime(timezone=True), server_default=func.now()),
 )
+
+class Admin(Base):
+    __tablename__ = "admins"
+
+    id = Column(Integer, primary_key=True, index=True)
+    username = Column(String, unique=True, nullable=False)
+    password_hash = Column(String, nullable=False)
