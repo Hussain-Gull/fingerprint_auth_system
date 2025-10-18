@@ -1,5 +1,5 @@
 // Protected Route Component for Admin Authentication
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Navigate, useLocation } from "react-router-dom";
 
 interface ProtectedRouteProps {
@@ -12,7 +12,7 @@ const ProtectedRoute = ({ children }: ProtectedRouteProps) => {
 
   useEffect(() => {
     const checkAuth = () => {
-      const token = localStorage.getItem("adminToken");
+      const token = localStorage.getItem("accessToken");
       if (token) {
         // TODO: Verify token with backend
         setIsAuthenticated(true);

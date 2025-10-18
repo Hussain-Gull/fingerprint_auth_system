@@ -3039,3 +3039,269 @@ TypeError: Passing coroutines is forbidden, use tasks explicitly.
 2025-10-17 20:41:34.495 | INFO     | app.services.fingerprint_session:_cleanup_device:323 - Device cleanup completed
 2025-10-17 20:41:34.526 | INFO     | app.routes.ws_routes:ws_scan:107 - Encrypted fingerprint saved for %s
 2025-10-17 20:41:34.528 | INFO     | app.routes.ws_routes:ws_scan:126 - WebSocket closed normally for %s
+2025-10-17 20:44:30.832 | INFO     | main:shutdown:93 - Database disconnected
+2025-10-18 03:11:35.331 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-18 03:11:35.332 | INFO     | main:startup:77 - Database Details:
+2025-10-18 03:11:35.333 | INFO     | main:startup:78 -   - Type: sqlite
+2025-10-18 03:11:35.334 | INFO     | main:startup:79 -   - Name: ./auth_biometric.db
+2025-10-18 03:11:35.335 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-18 03:11:35.335 | INFO     | main:startup:81 -   - Port: default
+2025-10-18 03:11:35.336 | INFO     | main:startup:82 -   - URL: sqlite:///./auth_biometric.db
+2025-10-18 03:11:35.336 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-18 03:11:35.455 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-18 03:11:35.456 | INFO     | main:startup:77 - Database Details:
+2025-10-18 03:11:35.456 | INFO     | main:startup:78 -   - Type: sqlite
+2025-10-18 03:11:35.457 | INFO     | main:startup:79 -   - Name: ./auth_biometric.db
+2025-10-18 03:11:35.457 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-18 03:11:35.457 | INFO     | main:startup:81 -   - Port: default
+2025-10-18 03:11:35.458 | INFO     | main:startup:82 -   - URL: sqlite:///./auth_biometric.db
+2025-10-18 03:11:35.458 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-18 03:11:44.177 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-18 03:11:44.177 | INFO     | main:startup:77 - Database Details:
+2025-10-18 03:11:44.178 | INFO     | main:startup:78 -   - Type: sqlite
+2025-10-18 03:11:44.179 | INFO     | main:startup:79 -   - Name: ./auth_biometric.db
+2025-10-18 03:11:44.179 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-18 03:11:44.179 | INFO     | main:startup:81 -   - Port: default
+2025-10-18 03:11:44.180 | INFO     | main:startup:82 -   - URL: sqlite:///./auth_biometric.db
+2025-10-18 03:11:44.181 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-18 03:12:17.394 | INFO     | main:shutdown:93 - Database disconnected
+2025-10-18 03:12:19.539 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-18 03:12:19.540 | INFO     | main:startup:77 - Database Details:
+2025-10-18 03:12:19.541 | INFO     | main:startup:78 -   - Type: sqlite
+2025-10-18 03:12:19.541 | INFO     | main:startup:79 -   - Name: ./auth_biometric.db
+2025-10-18 03:12:19.542 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-18 03:12:19.543 | INFO     | main:startup:81 -   - Port: default
+2025-10-18 03:12:19.544 | INFO     | main:startup:82 -   - URL: sqlite:///./auth_biometric.db
+2025-10-18 03:12:19.545 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-18 03:12:24.935 | INFO     | main:shutdown:93 - Database disconnected
+2025-10-18 03:12:27.023 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-18 03:12:27.024 | INFO     | main:startup:77 - Database Details:
+2025-10-18 03:12:27.025 | INFO     | main:startup:78 -   - Type: sqlite
+2025-10-18 03:12:27.025 | INFO     | main:startup:79 -   - Name: ./auth_biometric.db
+2025-10-18 03:12:27.026 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-18 03:12:27.026 | INFO     | main:startup:81 -   - Port: default
+2025-10-18 03:12:27.026 | INFO     | main:startup:82 -   - URL: sqlite:///./auth_biometric.db
+2025-10-18 03:12:27.027 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-18 03:12:27.391 | INFO     | main:shutdown:93 - Database disconnected
+2025-10-18 03:12:29.889 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-18 03:12:29.889 | INFO     | main:startup:77 - Database Details:
+2025-10-18 03:12:29.890 | INFO     | main:startup:78 -   - Type: sqlite
+2025-10-18 03:12:29.890 | INFO     | main:startup:79 -   - Name: ./auth_biometric.db
+2025-10-18 03:12:29.891 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-18 03:12:29.891 | INFO     | main:startup:81 -   - Port: default
+2025-10-18 03:12:29.892 | INFO     | main:startup:82 -   - URL: sqlite:///./auth_biometric.db
+2025-10-18 03:12:29.892 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-18 03:13:04.154 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-18 03:13:04.155 | INFO     | main:startup:77 - Database Details:
+2025-10-18 03:13:04.156 | INFO     | main:startup:78 -   - Type: sqlite
+2025-10-18 03:13:04.156 | INFO     | main:startup:79 -   - Name: ./auth_biometric.db
+2025-10-18 03:13:04.156 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-18 03:13:04.157 | INFO     | main:startup:81 -   - Port: default
+2025-10-18 03:13:04.157 | INFO     | main:startup:82 -   - URL: sqlite:///./auth_biometric.db
+2025-10-18 03:13:04.158 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-18 03:14:13.352 | INFO     | main:shutdown:93 - Database disconnected
+2025-10-18 03:14:21.235 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-18 03:14:21.235 | INFO     | main:startup:77 - Database Details:
+2025-10-18 03:14:21.236 | INFO     | main:startup:78 -   - Type: postgresql
+2025-10-18 03:14:21.236 | INFO     | main:startup:79 -   - Name: fingerprint_db
+2025-10-18 03:14:21.237 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-18 03:14:21.237 | INFO     | main:startup:81 -   - Port: 5432
+2025-10-18 03:14:21.237 | INFO     | main:startup:82 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-18 03:14:21.238 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-18 03:14:48.224 | INFO     | main:shutdown:93 - Database disconnected
+2025-10-18 03:14:52.597 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-18 03:14:52.598 | INFO     | main:startup:77 - Database Details:
+2025-10-18 03:14:52.598 | INFO     | main:startup:78 -   - Type: postgresql
+2025-10-18 03:14:52.598 | INFO     | main:startup:79 -   - Name: fingerprint_db
+2025-10-18 03:14:52.599 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-18 03:14:52.599 | INFO     | main:startup:81 -   - Port: 5432
+2025-10-18 03:14:52.599 | INFO     | main:startup:82 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-18 03:14:52.600 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-18 03:14:52.611 | INFO     | main:shutdown:93 - Database disconnected
+2025-10-18 03:14:56.157 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-18 03:14:56.157 | INFO     | main:startup:77 - Database Details:
+2025-10-18 03:14:56.158 | INFO     | main:startup:78 -   - Type: postgresql
+2025-10-18 03:14:56.158 | INFO     | main:startup:79 -   - Name: fingerprint_db
+2025-10-18 03:14:56.159 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-18 03:14:56.159 | INFO     | main:startup:81 -   - Port: 5432
+2025-10-18 03:14:56.159 | INFO     | main:startup:82 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-18 03:14:56.160 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-18 03:20:48.944 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-18 03:20:48.945 | INFO     | main:startup:77 - Database Details:
+2025-10-18 03:20:48.945 | INFO     | main:startup:78 -   - Type: postgresql
+2025-10-18 03:20:48.946 | INFO     | main:startup:79 -   - Name: fingerprint_db
+2025-10-18 03:20:48.946 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-18 03:20:48.946 | INFO     | main:startup:81 -   - Port: 5432
+2025-10-18 03:20:48.947 | INFO     | main:startup:82 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-18 03:20:48.947 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-18 03:23:26.168 | INFO     | main:shutdown:93 - Database disconnected
+2025-10-18 03:23:59.323 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-18 03:23:59.324 | INFO     | main:startup:77 - Database Details:
+2025-10-18 03:23:59.325 | INFO     | main:startup:78 -   - Type: postgresql
+2025-10-18 03:23:59.325 | INFO     | main:startup:79 -   - Name: fingerprint_db
+2025-10-18 03:23:59.326 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-18 03:23:59.326 | INFO     | main:startup:81 -   - Port: 5432
+2025-10-18 03:23:59.327 | INFO     | main:startup:82 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-18 03:23:59.328 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-18 03:24:53.045 | INFO     | main:shutdown:93 - Database disconnected
+2025-10-18 03:26:15.497 | INFO     | main:shutdown:93 - Database disconnected
+2025-10-18 03:34:40.819 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-18 03:34:40.820 | INFO     | main:startup:77 - Database Details:
+2025-10-18 03:34:40.820 | INFO     | main:startup:78 -   - Type: postgresql
+2025-10-18 03:34:40.821 | INFO     | main:startup:79 -   - Name: fingerprint_db
+2025-10-18 03:34:40.821 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-18 03:34:40.822 | INFO     | main:startup:81 -   - Port: 5432
+2025-10-18 03:34:40.822 | INFO     | main:startup:82 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-18 03:34:40.823 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-18 03:34:40.844 | INFO     | main:shutdown:93 - Database disconnected
+2025-10-18 03:34:56.863 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-18 03:34:56.863 | INFO     | main:startup:77 - Database Details:
+2025-10-18 03:34:56.864 | INFO     | main:startup:78 -   - Type: postgresql
+2025-10-18 03:34:56.864 | INFO     | main:startup:79 -   - Name: fingerprint_db
+2025-10-18 03:34:56.865 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-18 03:34:56.865 | INFO     | main:startup:81 -   - Port: 5432
+2025-10-18 03:34:56.866 | INFO     | main:startup:82 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-18 03:34:56.866 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-18 03:35:57.645 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-18 03:35:57.645 | INFO     | main:startup:77 - Database Details:
+2025-10-18 03:35:57.646 | INFO     | main:startup:78 -   - Type: postgresql
+2025-10-18 03:35:57.646 | INFO     | main:startup:79 -   - Name: fingerprint_db
+2025-10-18 03:35:57.647 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-18 03:35:57.647 | INFO     | main:startup:81 -   - Port: 5432
+2025-10-18 03:35:57.647 | INFO     | main:startup:82 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-18 03:35:57.648 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-18 03:47:24.439 | INFO     | main:shutdown:93 - Database disconnected
+2025-10-18 03:47:28.529 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-18 03:47:28.530 | INFO     | main:startup:77 - Database Details:
+2025-10-18 03:47:28.531 | INFO     | main:startup:78 -   - Type: postgresql
+2025-10-18 03:47:28.531 | INFO     | main:startup:79 -   - Name: fingerprint_db
+2025-10-18 03:47:28.531 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-18 03:47:28.532 | INFO     | main:startup:81 -   - Port: 5432
+2025-10-18 03:47:28.532 | INFO     | main:startup:82 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-18 03:47:28.533 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-18 04:22:46.884 | INFO     | main:shutdown:93 - Database disconnected
+2025-10-18 04:22:50.058 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-18 04:22:50.059 | INFO     | main:startup:77 - Database Details:
+2025-10-18 04:22:50.059 | INFO     | main:startup:78 -   - Type: postgresql
+2025-10-18 04:22:50.060 | INFO     | main:startup:79 -   - Name: fingerprint_db
+2025-10-18 04:22:50.060 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-18 04:22:50.061 | INFO     | main:startup:81 -   - Port: 5432
+2025-10-18 04:22:50.061 | INFO     | main:startup:82 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-18 04:22:50.061 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-18 04:22:57.277 | INFO     | main:shutdown:93 - Database disconnected
+2025-10-18 04:23:00.352 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-18 04:23:00.352 | INFO     | main:startup:77 - Database Details:
+2025-10-18 04:23:00.353 | INFO     | main:startup:78 -   - Type: postgresql
+2025-10-18 04:23:00.353 | INFO     | main:startup:79 -   - Name: fingerprint_db
+2025-10-18 04:23:00.354 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-18 04:23:00.354 | INFO     | main:startup:81 -   - Port: 5432
+2025-10-18 04:23:00.354 | INFO     | main:startup:82 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-18 04:23:00.355 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-18 04:23:54.829 | INFO     | main:shutdown:93 - Database disconnected
+2025-10-18 04:23:58.410 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-18 04:23:58.410 | INFO     | main:startup:77 - Database Details:
+2025-10-18 04:23:58.411 | INFO     | main:startup:78 -   - Type: postgresql
+2025-10-18 04:23:58.411 | INFO     | main:startup:79 -   - Name: fingerprint_db
+2025-10-18 04:23:58.412 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-18 04:23:58.413 | INFO     | main:startup:81 -   - Port: 5432
+2025-10-18 04:23:58.413 | INFO     | main:startup:82 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-18 04:23:58.414 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-18 04:23:58.426 | INFO     | main:shutdown:93 - Database disconnected
+2025-10-18 04:24:01.134 | INFO     | main:startup:76 - Successfully connected to database!
+2025-10-18 04:24:01.134 | INFO     | main:startup:77 - Database Details:
+2025-10-18 04:24:01.134 | INFO     | main:startup:78 -   - Type: postgresql
+2025-10-18 04:24:01.135 | INFO     | main:startup:79 -   - Name: fingerprint_db
+2025-10-18 04:24:01.135 | INFO     | main:startup:80 -   - Host: localhost
+2025-10-18 04:24:01.135 | INFO     | main:startup:81 -   - Port: 5432
+2025-10-18 04:24:01.136 | INFO     | main:startup:82 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-18 04:24:01.136 | INFO     | main:startup:84 - Server starting at 0.0.0.0:8000
+2025-10-18 04:24:46.828 | INFO     | main:shutdown:93 - Database disconnected
+2025-10-18 05:32:54.662 | INFO     | main:startup:78 - Successfully connected to database!
+2025-10-18 05:32:54.663 | INFO     | main:startup:79 - Database Details:
+2025-10-18 05:32:54.664 | INFO     | main:startup:80 -   - Type: postgresql
+2025-10-18 05:32:54.664 | INFO     | main:startup:81 -   - Name: fingerprint_db
+2025-10-18 05:32:54.664 | INFO     | main:startup:82 -   - Host: localhost
+2025-10-18 05:32:54.664 | INFO     | main:startup:83 -   - Port: 5432
+2025-10-18 05:32:54.665 | INFO     | main:startup:84 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-18 05:32:54.665 | INFO     | main:startup:86 - Server starting at 0.0.0.0:8000
+2025-10-18 05:33:02.703 | INFO     | main:shutdown:95 - Database disconnected
+2025-10-18 05:33:06.951 | INFO     | main:startup:78 - Successfully connected to database!
+2025-10-18 05:33:06.952 | INFO     | main:startup:79 - Database Details:
+2025-10-18 05:33:06.952 | INFO     | main:startup:80 -   - Type: postgresql
+2025-10-18 05:33:06.953 | INFO     | main:startup:81 -   - Name: fingerprint_db
+2025-10-18 05:33:06.953 | INFO     | main:startup:82 -   - Host: localhost
+2025-10-18 05:33:06.953 | INFO     | main:startup:83 -   - Port: 5432
+2025-10-18 05:33:06.954 | INFO     | main:startup:84 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-18 05:33:06.954 | INFO     | main:startup:86 - Server starting at 0.0.0.0:8000
+2025-10-18 05:33:10.835 | INFO     | main:shutdown:95 - Database disconnected
+2025-10-18 05:33:15.728 | INFO     | main:startup:78 - Successfully connected to database!
+2025-10-18 05:33:15.730 | INFO     | main:startup:79 - Database Details:
+2025-10-18 05:33:15.731 | INFO     | main:startup:80 -   - Type: postgresql
+2025-10-18 05:33:15.733 | INFO     | main:startup:81 -   - Name: fingerprint_db
+2025-10-18 05:33:15.734 | INFO     | main:startup:82 -   - Host: localhost
+2025-10-18 05:33:15.735 | INFO     | main:startup:83 -   - Port: 5432
+2025-10-18 05:33:15.735 | INFO     | main:startup:84 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-18 05:33:15.735 | INFO     | main:startup:86 - Server starting at 0.0.0.0:8000
+2025-10-18 05:33:22.908 | INFO     | main:shutdown:95 - Database disconnected
+2025-10-18 05:33:27.394 | INFO     | main:startup:78 - Successfully connected to database!
+2025-10-18 05:33:27.395 | INFO     | main:startup:79 - Database Details:
+2025-10-18 05:33:27.395 | INFO     | main:startup:80 -   - Type: postgresql
+2025-10-18 05:33:27.396 | INFO     | main:startup:81 -   - Name: fingerprint_db
+2025-10-18 05:33:27.396 | INFO     | main:startup:82 -   - Host: localhost
+2025-10-18 05:33:27.397 | INFO     | main:startup:83 -   - Port: 5432
+2025-10-18 05:33:27.397 | INFO     | main:startup:84 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-18 05:33:27.397 | INFO     | main:startup:86 - Server starting at 0.0.0.0:8000
+2025-10-18 05:33:27.430 | INFO     | main:shutdown:95 - Database disconnected
+2025-10-18 05:33:31.953 | INFO     | main:startup:78 - Successfully connected to database!
+2025-10-18 05:33:31.954 | INFO     | main:startup:79 - Database Details:
+2025-10-18 05:33:31.954 | INFO     | main:startup:80 -   - Type: postgresql
+2025-10-18 05:33:31.955 | INFO     | main:startup:81 -   - Name: fingerprint_db
+2025-10-18 05:33:31.955 | INFO     | main:startup:82 -   - Host: localhost
+2025-10-18 05:33:31.956 | INFO     | main:startup:83 -   - Port: 5432
+2025-10-18 05:33:31.956 | INFO     | main:startup:84 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-18 05:33:31.957 | INFO     | main:startup:86 - Server starting at 0.0.0.0:8000
+2025-10-18 05:36:08.983 | INFO     | main:shutdown:95 - Database disconnected
+2025-10-18 05:36:13.392 | INFO     | main:startup:78 - Successfully connected to database!
+2025-10-18 05:36:13.394 | INFO     | main:startup:79 - Database Details:
+2025-10-18 05:36:13.395 | INFO     | main:startup:80 -   - Type: postgresql
+2025-10-18 05:36:13.396 | INFO     | main:startup:81 -   - Name: fingerprint_db
+2025-10-18 05:36:13.396 | INFO     | main:startup:82 -   - Host: localhost
+2025-10-18 05:36:13.397 | INFO     | main:startup:83 -   - Port: 5432
+2025-10-18 05:36:13.398 | INFO     | main:startup:84 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-18 05:36:13.399 | INFO     | main:startup:86 - Server starting at 0.0.0.0:8000
+2025-10-18 05:37:08.438 | INFO     | main:shutdown:95 - Database disconnected
+2025-10-18 05:37:12.190 | INFO     | main:startup:78 - Successfully connected to database!
+2025-10-18 05:37:12.191 | INFO     | main:startup:79 - Database Details:
+2025-10-18 05:37:12.191 | INFO     | main:startup:80 -   - Type: postgresql
+2025-10-18 05:37:12.191 | INFO     | main:startup:81 -   - Name: fingerprint_db
+2025-10-18 05:37:12.192 | INFO     | main:startup:82 -   - Host: localhost
+2025-10-18 05:37:12.192 | INFO     | main:startup:83 -   - Port: 5432
+2025-10-18 05:37:12.193 | INFO     | main:startup:84 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-18 05:37:12.193 | INFO     | main:startup:86 - Server starting at 0.0.0.0:8000
+2025-10-18 05:37:12.206 | INFO     | main:shutdown:95 - Database disconnected
+2025-10-18 05:37:15.955 | INFO     | main:startup:78 - Successfully connected to database!
+2025-10-18 05:37:15.955 | INFO     | main:startup:79 - Database Details:
+2025-10-18 05:37:15.956 | INFO     | main:startup:80 -   - Type: postgresql
+2025-10-18 05:37:15.956 | INFO     | main:startup:81 -   - Name: fingerprint_db
+2025-10-18 05:37:15.957 | INFO     | main:startup:82 -   - Host: localhost
+2025-10-18 05:37:15.958 | INFO     | main:startup:83 -   - Port: 5432
+2025-10-18 05:37:15.959 | INFO     | main:startup:84 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-18 05:37:15.959 | INFO     | main:startup:86 - Server starting at 0.0.0.0:8000
+2025-10-18 05:37:40.001 | INFO     | main:shutdown:95 - Database disconnected
+2025-10-18 05:37:44.171 | INFO     | main:startup:78 - Successfully connected to database!
+2025-10-18 05:37:44.172 | INFO     | main:startup:79 - Database Details:
+2025-10-18 05:37:44.172 | INFO     | main:startup:80 -   - Type: postgresql
+2025-10-18 05:37:44.172 | INFO     | main:startup:81 -   - Name: fingerprint_db
+2025-10-18 05:37:44.173 | INFO     | main:startup:82 -   - Host: localhost
+2025-10-18 05:37:44.173 | INFO     | main:startup:83 -   - Port: 5432
+2025-10-18 05:37:44.174 | INFO     | main:startup:84 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-18 05:37:44.174 | INFO     | main:startup:86 - Server starting at 0.0.0.0:8000
+2025-10-18 05:55:56.598 | INFO     | main:shutdown:95 - Database disconnected
+2025-10-18 05:55:59.416 | INFO     | main:startup:78 - Successfully connected to database!
+2025-10-18 05:55:59.416 | INFO     | main:startup:79 - Database Details:
+2025-10-18 05:55:59.417 | INFO     | main:startup:80 -   - Type: postgresql
+2025-10-18 05:55:59.417 | INFO     | main:startup:81 -   - Name: fingerprint_db
+2025-10-18 05:55:59.418 | INFO     | main:startup:82 -   - Host: localhost
+2025-10-18 05:55:59.418 | INFO     | main:startup:83 -   - Port: 5432
+2025-10-18 05:55:59.418 | INFO     | main:startup:84 -   - URL: postgresql://postgres:hussain@localhost:5432/fingerprint_db
+2025-10-18 05:55:59.419 | INFO     | main:startup:86 - Server starting at 0.0.0.0:8000

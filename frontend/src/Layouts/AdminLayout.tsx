@@ -30,7 +30,7 @@ const AdminLayout = () => {
 
   const handleLogout = () => {
     // Clear admin session and redirect to login
-    localStorage.removeItem("adminToken");
+    localStorage.removeItem("accessToken");
     navigate("/admin/login");
   };
 
@@ -114,12 +114,6 @@ const AdminLayout = () => {
             >
               <Menu className="h-5 w-5" />
             </Button>
-            
-            <div className="flex items-center space-x-4">
-              <div className="text-sm text-gray-500">
-                Welcome back, Admin
-              </div>
-            </div>
           </div>
         </div>
 

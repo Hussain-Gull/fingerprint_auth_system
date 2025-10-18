@@ -2,10 +2,11 @@ from urllib.parse import urlparse
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.routes import applications, ws_routes
-from app.api.v1 import auth
+from app.api.v1 import admin_auth
 from app.db.db import database, engine, metadata
 from app.utils.logger import logger
 from app.core.config import settings
+from app.api.v1 import students_applications
 
 app = FastAPI(title="Fingerprint Auth API")
 
@@ -45,8 +46,9 @@ def get_database_info():
         }
 
 # include routers
-app.include_router(auth.router, prefix="/api")
+app.include_router(admin_auth.router, prefix="/api")
 app.include_router(applications.router, prefix="/api")
+app.include_router(students_applications.router, prefix="/api")
 app.include_router(ws_routes.router)
 
 @app.get("/health")

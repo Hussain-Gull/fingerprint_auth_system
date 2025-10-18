@@ -9,14 +9,14 @@ applications = Table(
     "applications",
     metadata,
     Column("id", Integer, primary_key=True),
-    Column("full_name", String(64), nullable=False),
-    Column("father_name", String(64)),
+    Column("full_name", String(15), nullable=False),
+    Column("father_name", String(15)),
     Column("date_of_birth", String(32)),
-    Column("gender", String(16)),
-    Column("country", String(32)),
-    Column("identity_number", String(32), unique=True, nullable=False),
-    Column("address", String(256)),
-    Column("subject", String(64)),
+    Column("gender", String(10)),
+    Column("country", String(10)),
+    Column("identity_number", String(13), unique=True, nullable=False),
+    Column("address", String(100)),
+    Column("subject", String(25)),
     Column("cnic_front_path", String(256), nullable=True),
     Column("cnic_back_path", String(256), nullable=True),
     Column("student_image_path", String(256), nullable=True),
@@ -36,9 +36,18 @@ sessions = Table(
     Column("created_at", DateTime(timezone=True), server_default=func.now()),
 )
 
+# Create admins table using metadata to ensure it's included in create_all
+admins = Table(
+    "admins",
+    metadata,
+    Column("id", Integer, primary_key=True, index=True),
+    Column("username", String(50), unique=True, nullable=False),
+    Column("password", String(255), nullable=False),
+)
+
 class Admin(Base):
     __tablename__ = "admins"
 
     id = Column(Integer, primary_key=True, index=True)
-    username = Column(String, unique=True, nullable=False)
-    password_hash = Column(String, nullable=False)
+    username = Column(String(50), unique=True, nullable=False)
+    password = Column(String(255), nullable=False)
